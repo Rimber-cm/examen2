@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = document.getElementById('name').value;
             const message = document.getElementById('message').value;
             
-            // Validación básica
+ 
             if (!email || !name || !message) {
                 alert('Por favor completa todos los campos requeridos.');
                 return;
             }
             
-            // Simulación de envío
+
             const submitBtn = document.querySelector('.submit-btn');
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             submitBtn.disabled = true;
